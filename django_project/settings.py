@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['https://vite.chaeminu.dev/', 'vite.chaeminu.dev']
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 
 # Application definition
 
